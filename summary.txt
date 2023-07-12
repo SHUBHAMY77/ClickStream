@@ -1,0 +1,32 @@
+
+Summary of Click stream Data
+
+
+------>Data ingesting---------->Kafka----------->data processing---------->Elasticsearch
+
+Approach:
+developed pipeline using kafka , MySQL, spark, Elasticsearch where data is stored in MySQL.
+
+
+1. Ingestion Data:
+   First we have  to configured kafka and  then data  is ingested to kafka clicks from websites anin json format or Api.
+
+2. Data Storage:
+   MySQL is where we store data in three tables and created schema accordingly.
+
+3. Data Processing:
+   processed data periodically  average clicks.
+
+
+Assumptions:
+
+- Data is comming in json format
+- table columns
+- data is comming from single source 
+
+
+
+
+Conclusion:
+Developed data pipeline using kafka , MySQL, Elasticsearch using python where live data is being processed using kafka the indexed using Elasticsearch so that we can retrive data easily.
+as this live streaming data and let say sourse URL is down still the pipeline is not affeacted yes the data will halt we may get null values but it is not affeacting cunsumers same on the other side. 
